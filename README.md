@@ -8,7 +8,7 @@ It generates not cool (and cool) gifs a really simple way.
 
 ## Demo
 
-You can <a href="http://lab.raphaelbastide.com/irritating-message/">try vomimage online</a>.
+You can <a href="http://lab.raphaelbastide.com/irritating-message/">try it online</a>.
 
 ## Requirement
 

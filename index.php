@@ -49,7 +49,7 @@
 <title>Irritating Message</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width">
-<style>body{text-align:center; font-size:2.6vw;} p{margin:5px;} i{background:yellow; font-style:normal;} img{max-width:<?php echo $w ?>px; margin-top:18vh; width:100%; height:auto;} .result{ width:100%; margin:0 auto;} .small{font-size:14px;} .hide{opacity:0;} .by{position:fixed; bottom:10px; right:10px;} body.help .hide{opacity:1;} #help{ background:none; border:none; font-size:inherit; font-family:inherit; display:block; position:fixed; top:10px; right:10px; cursor:pointer; z-index:10;}</style>
+<style>body{text-align:center; font-size:2.6vw;} p{margin:5px;} i{background:yellow; font-style:normal;} img{max-width:<?php echo $w ?>px; margin-top:18vh; width:100%; height:auto;} .result{ width:100%; margin:0 auto;} .small{font-size:14px;} .hide{opacity:0;} .by{position:fixed; bottom:40px; right:40px;} body.help .hide{opacity:1;} #help{ background:none; border:none; font-size:inherit; font-family:inherit; display:block; position:fixed; top:40px; right:40px; cursor:pointer; z-index:20;}</style>
 </head>
   <body id="toggle">
     <button id="help">?</button>
@@ -57,7 +57,7 @@
       <p class="small hide">To make a gif, add your content as URL params, like this:</p>
       <p class="hide">/?<i>t=Irritating Message</i>&<i>i=demo.jpg</i></p>
       <img src="messages/<?php echo $resultname ?>" alt="irritating result">
-      <p class="small hide">Download this image, or you will lose it. (I don’t want to store your shit).</p>
+      <p class="small hide">Download your image, or you will lose it. (I don’t want to store your shit).</p>
     </div>
     <p class="small by hide">by <a href="http://raphaelbastide.com/">RB</a> - <a href="https://github.com/raphaelbastide/irritating-message">fork it</a></p>
   </body>
