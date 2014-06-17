@@ -50,7 +50,7 @@
 <style>body{text-align:center; font-size:2.6vw;} p{margin:5px;} i{background:yellow; font-style:normal;} img{max-width:<?php echo $w ?>px; margin-top:18vh; width:100%; height:auto;} .result{ width:100%; margin:0 auto;} .small{font-size:14px;} .hide{opacity:0;} .by{position:fixed; bottom:40px; right:40px;} body.help .hide{opacity:1;} #help{ background:none; border:none; font-size:inherit; font-family:inherit; display:block; position:fixed; top:40px; right:40px; cursor:pointer; z-index:20;}</style>
 </head>
 <body id="toggle">
-  <button id="help">?</button>
+  <button id="help" onclick="document.body.classList.toggle('help')">?</button>
   <div class="result">
     <p class="small hide">To make a gif, add your content as URL params, like this:</p>
     <p class="hide">/?<i>t=Irritating Message</i>&amp;<i>i=demo.jpg</i></p>
@@ -58,27 +58,5 @@
     <p class="small hide">Download your image, or you will lose it. (I don’t want to store your shit).</p>
   </div>
   <p class="small by hide">by <a href="http://raphaelbastide.com/">RB</a> - <a href="https://github.com/raphaelbastide/irritating-message">fork it</a></p>
-  <script>
-    var b = document.getElementById("toggle");
-    // hasClass
-    function hasClass(elem, className) {
-        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
-    }
-    // toggleClass
-    function toggleClass(elem, className) {
-        var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
-        if (hasClass(elem, className)) {
-            while (newClass.indexOf(" " + className + " ") >= 0 ) {
-                newClass = newClass.replace( " " + className + " " , " " );
-            }
-            elem.className = newClass.replace(/^\s+|\s+$/g, '');
-        } else {
-            elem.className += ' ' + className;
-        }
-    }
-    document.getElementById('help').onclick = function() {
-        toggleClass(b, 'help');
-    }
-  </script>
 </body>
 </html>
